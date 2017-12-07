@@ -1,0 +1,22 @@
+{
+    "herbivores": [
+        {
+            "common_name": "Pondicherry shark",
+            "scientific_name": "Carcharhinus hemiodon",
+            "status": "critically endangered",
+            "region": "Indo-Pacific coastal waters"
+        },
+        {
+            "common_name": "maned wolf",
+            "scientific_name": "Chrysocyon brachyurus",
+            "status": "near threatened",
+            "region": "central South America"
+        },
+        {
+            "common_name": "ball python",
+            "scientific_name": "Python regius",
+            "status": "least concern",
+            "region": "central Africa"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "herbivores": [
+        {
+            "common_name": "Przewalski's horse",
+            "scientific_name": "Equus ferus przewalskii",
+            "status": "endangered",
+            "region": "Mongolia"
+        },
+        {
+            "common_name": "Masai giraffe",
+            "scientific_name": "Giraffa camelopardalis tippelskirchi",
+            "status": "vulnerable",
+            "region": "Africa"
+        },
+        {
+            "common_name": "giant muntjac",
+            "scientific_name": "Muntiacus vuquangensis",
+            "status": "critically endangered",
+            "region": "Vietnam & Laos"
+        }
+    ]
+}
