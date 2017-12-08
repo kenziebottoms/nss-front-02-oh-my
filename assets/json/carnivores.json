@@ -1,22 +1,25 @@
 {
-    "herbivores": [
+    "animals": [
         {
             "common_name": "Pondicherry shark",
             "scientific_name": "Carcharhinus hemiodon",
             "status": "critically endangered",
-            "region": "Indo-Pacific coastal waters"
+            "region": "Indo-Pacific coastal waters",
+            "summary": "The Pondicherry shark is an extremely rare species of requiem shark, in the family Carcharhinidae. A small and stocky gray shark, it grows not much longer than 3.3 ft, and it has a fairly long, pointed snout."
         },
         {
             "common_name": "maned wolf",
             "scientific_name": "Chrysocyon brachyurus",
             "status": "near threatened",
-            "region": "central South America"
+            "region": "central South America",
+            "summary": "The maned wolf is the largest canid of South America. Its markings resemble those of foxes, but it is not a fox, nor is it a wolf, as it is not closely related to other canids."
         },
         {
             "common_name": "ball python",
             "scientific_name": "Python regius",
             "status": "least concern",
-            "region": "central Africa"
+            "region": "central Africa",
+            "summary": "The ball python, also known as the royal python, is a python species found in sub-Saharan Africa. Like all other pythons, it is a non-venomous constrictor. This is the smallest of the African pythons and is popular in the pet trade."
         }
     ]
 }

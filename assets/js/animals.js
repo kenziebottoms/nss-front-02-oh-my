@@ -1,11 +1,17 @@
 "use strict";
 
 let carnivores = [];
-let herbivores = [];
 
-function getCarnivores() {
-    return carnivores;
+function loadCarnivores(callback) {
+    const loader = new XMLHttpRequest();
+
+    loader.addEventListener("load", function() {
+        carnivores = JSON.parse(this.responseText);
+        callback(carnivores);
+    });
+
+    loader.open("GET", "/assets/json/carnivores.json", true);
+    loader.send();
 }
-function getHerbivores() {
-    return herbivores;
-}
+
+module.exports = {loadCarnivores};
