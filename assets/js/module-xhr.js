@@ -6,8 +6,16 @@ function showCarnivores(carnivores) {
     let animals = carnivores.animals;
     let carnDiv = document.getElementById("carnivores");
     animals.forEach(animal => {
-        card = getCard(animal);
+        let card = getCard(animal);
         carnDiv.appendChild(card);
+    });
+}
+function showHerbivores(herbivores) {
+    let animals = herbivores.animals;
+    let herbDiv = document.getElementById("herbivores");
+    animals.forEach(animal => {
+        let card = getCard(animal);
+        herbDiv.appendChild(card);
     });
 }
 
@@ -32,10 +40,9 @@ function getCard(animal) {
     return card;
 }
 
-function showHerbivores() {}
-
 function populatePage() {
     zoo.loadCarnivores(showCarnivores);
+    zoo.loadHerbivores(showHerbivores);
 }
 
 module.exports = {populatePage};

@@ -6,7 +6,7 @@ function loadCarnivores(callback) {
     const loader = new XMLHttpRequest();
 
     loader.addEventListener("load", function() {
-        carnivores = JSON.parse(this.responseText);
+        let carnivores = JSON.parse(this.responseText);
         callback(carnivores);
     });
 
@@ -14,4 +14,16 @@ function loadCarnivores(callback) {
     loader.send();
 }
 
-module.exports = {loadCarnivores};
+function loadHerbivores(callback) {
+    const loader = new XMLHttpRequest();
+
+    loader.addEventListener("load", function() {
+        let herbivores = JSON.parse(this.responseText);
+        callback(herbivores);
+    });
+
+    loader.open("GET", "/assets/json/herbivores.json", true);
+    loader.send();
+}
+
+module.exports = {loadCarnivores, loadHerbivores};
