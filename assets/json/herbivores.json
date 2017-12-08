@@ -4,19 +4,22 @@
             "common_name": "Przewalski's horse",
             "scientific_name": "Equus ferus przewalskii",
             "status": "endangered",
-            "region": "Mongolia"
+            "region": "Mongolia",
+            "summary": "The Przewalski's horse, or Dzungarian horse, is a rare and endangered subspecies of wild horse native to the steppes of central Asia."
         },
         {
             "common_name": "Masai giraffe",
             "scientific_name": "Giraffa camelopardalis tippelskirchi",
             "status": "vulnerable",
-            "region": "Africa"
+            "region": "Africa",
+            "summary": "The Masai giraffe, also called Kilimanjaro giraffe, is the largest species of giraffe native to East Africa, also the tallest land mammal. The Masai giraffe can be found in central and southern Kenya and in Tanzania."
         },
         {
             "common_name": "giant muntjac",
             "scientific_name": "Muntiacus vuquangensis",
             "status": "critically endangered",
-            "region": "Vietnam & Laos"
+            "region": "Vietnam & Laos",
+            "summary": "The giant muntjac, sometimes referred to as the large-antlered muntjac, is a species of muntjac deer. It is the largest muntjac species and was discovered in 1994 in Vũ Quang, Hà Tĩnh Province of Vietnam and in central Laos."
         }
     ]
 }
