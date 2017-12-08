@@ -41,8 +41,8 @@ function getCard(animal) {
 }
 
 function populatePage() {
-    zoo.loadCarnivores(showCarnivores);
-    zoo.loadHerbivores(showHerbivores);
+    zoo.loadAnimals(showCarnivores, 'carnivores.json');
+    zoo.loadAnimals(showHerbivores, 'herbivores.json');
 }
 
 module.exports = {populatePage};

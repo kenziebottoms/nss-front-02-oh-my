@@ -1,6 +1,16 @@
 "use strict";
 
-let carnivores = [];
+function loadAnimals(callback, filename) {
+    const loader = new XMLHttpRequest();
+    
+    loader.addEventListener("load", function() {
+        let animals = JSON.parse(this.responseText);
+        callback(animals);
+    });
+
+    loader.open("GET", `/assets/json/${filename}`, true);
+    loader.send();
+}
 
 function loadCarnivores(callback) {
     const loader = new XMLHttpRequest();
@@ -26,4 +36,4 @@ function loadHerbivores(callback) {
     loader.send();
 }
 
-module.exports = {loadCarnivores, loadHerbivores};
+module.exports = {loadCarnivores, loadHerbivores, loadAnimals};
