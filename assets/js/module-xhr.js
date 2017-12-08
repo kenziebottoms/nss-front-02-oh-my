@@ -2,20 +2,17 @@
 
 const zoo = require("./animals");
 
-function showCarnivores(carnivores) {
-    let animals = carnivores.animals;
-    let carnDiv = document.getElementById("carnivores");
-    animals.forEach(animal => {
-        let card = getCard(animal);
-        carnDiv.appendChild(card);
-    });
+function populatePage() {
+    zoo.loadAnimals(showAnimals, "carnivores.json", "carnivores");
+    zoo.loadAnimals(showAnimals, "herbivores.json", "herbivores");
 }
-function showHerbivores(herbivores) {
-    let animals = herbivores.animals;
-    let herbDiv = document.getElementById("herbivores");
+
+function showAnimals(animalObject, divId) {
+    let animals = animalObject.animals;
+    let div = document.getElementById(divId);
     animals.forEach(animal => {
         let card = getCard(animal);
-        herbDiv.appendChild(card);
+        div.appendChild(card);
     });
 }
 
@@ -38,11 +35,6 @@ function getCard(animal) {
     cardBody.appendChild(summary);
     card.appendChild(cardBody);
     return card;
-}
-
-function populatePage() {
-    zoo.loadCarnivores(showCarnivores);
-    zoo.loadHerbivores(showHerbivores);
 }
 
 module.exports = {populatePage};
