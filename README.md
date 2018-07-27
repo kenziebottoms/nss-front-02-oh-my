@@ -1,5 +1,15 @@
 # Modules, XHRs and Callbacks, Oh My
 
+## Run Locally
+
+```bash
+npm install git@github.com:kenziebottoms/nss-front-02-oh-my.git
+cd nss-front-02-oh-my
+npm install
+grunt
+hs -o
+```
+
 ## Requirements
 
 1. :white_check_mark: Create two JSON files. One should contain an array of carnivores, and the other should contain an array of herbivores.
